@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1"
+    tools:context=".BuatTim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Tombol Kembali -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/kembali"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- Judul Buat Tim -->
+        <TextView
+            android:id="@+id/titleCreateTeam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buat_tim"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+
+    <!-- Label Nama Tim -->
+    <TextView
+        android:id="@+id/labelTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_tim"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="start"/>
+
+    <!-- Input Nama Tim -->
+    <EditText
+        android:id="@+id/inputTeamName"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_nama_tim"
+        android:background="@drawable/custom_edittext"
+        android:importantForAutofill="no"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"/>
+
+    <!-- Tombol Tambah Anggota dan Lihat Anggota -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <!-- Tombol Tambah Anggota -->
+        <Button
+            android:id="@+id/addMemberButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_anggota"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <!-- Tombol Lihat Anggota -->
+        <Button
+            android:id="@+id/viewMembersButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lihat_anggota"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Tombol Simpan di bagian bawah -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simpan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/brown"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

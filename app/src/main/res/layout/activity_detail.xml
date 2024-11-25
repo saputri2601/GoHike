@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailedActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:layout_marginTop="14dp"
+        android:text="@string/peralatan"
+        android:textSize="24sp"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:id="@+id/cardImage"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="444dp"
+            android:layout_height="267dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carier" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tasCarrierTitle"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:id="@+id/detailName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/peralatan_pribadi"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:id="@+id/detailPembawaan"/>
+
+    <TextView
+        android:id="@+id/detailPengertian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tasCarrierDesc"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="2dp"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/info_gunung"
+            android:icon="@drawable/info_gunung"
+            android:title="@string/informasi_gunung" />
+        <item
+            android:id="@+id/info_opentrip"
+            android:icon="@drawable/info_opentrip"
+            android:title="@string/informasi_open_trip" />
+        <item
+            android:id="@+id/Peralatan"
+            android:icon="@drawable/peralatan"
+            android:title="@string/peralatan" />
+    </group>
+
+    <item android:title="@string/lainnya">
+        <menu>
+            <item
+                android:id="@+id/profil"
+                android:icon="@drawable/icon_profil"
+                android:title="@string/profil" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/icon_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

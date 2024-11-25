@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">GoHike</string>
+    <string name="gohike_tittle">GoHike</string>
+    <string name="siap_mendaki_gunung">Siap Mendaki Gunung</string>
+    <string name="cari_gunung">Cari Gunung</string>
+    <string name="provinsi">Provinsi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="informasi_gunung">Informasi Gunung</string>
+    <string name="informasi_open_trip">Informasi Open Trip</string>
+    <string name="informasi_cuaca">Informasi Cuaca</string>
+    <string name="peralatan">Peralatan</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="profil">Profil</string>
+    <string name="halo_petualang">Halo, petualang!</string>
+    <string name="ayo_mulai_perjalananmu_dengan_gohike">Ayo mulai perjalananmu dengan GoHike!</string>
+    <string name="detail_gunung">Detail Gunung</string>
+    <string name="cuaca">cuaca</string>
+    <string name="opentrip">opentrip</string>
+    <string name="peralatan1">peralatan_</string>
+    <string name="profil1">profil1</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="logout">Logout</string>
+    <string name="navigasi">Navigasi</string>
+
+    <string name="tendaTitle">Tenda</string>
+    <string name="tendaDesc">Tenda adalah perlengkapan utama untuk mendaki gunung yang berfungsi sebagai tempat berlindung dari hujan, angin, dan suhu dingin.
+Tenda dirancang ringan, mudah dibawa, dan cukup kokoh untuk digunakan di berbagai kondisi medan.
+Memilih tenda yang tahan air dan sesuai kapasitas sangat penting untuk kenyamanan dan keamanan.</string>
+
+    <!-- Tas Carrier -->
+    <string name="tasCarrierTitle">Tas Carrier</string>
+    <string name="tasCarrierDesc">Tas carrier adalah tas besar yang dirancang untuk membawa perlengkapan mendaki seperti pakaian, makanan, dan alat tidur.
+Tas ini dilengkapi dengan tali bahu yang empuk dan sistem penyangga punggung untuk mengurangi tekanan saat membawa beban berat.
+Ukuran tas carrier biasanya bervariasi, mulai dari 40 hingga 80 liter, tergantung kebutuhan perjalanan.</string>
+
+    <!-- First Aid Kit -->
+    <string name="firstAidKitTitle">First Aid Kit</string>
+    <string name="firstAidKitDesc">First aid kit adalah perlengkapan medis darurat yang wajib dibawa saat mendaki.
+Kit ini berisi barang seperti perban, antiseptik, plester, dan obat-obatan dasar seperti penghilang rasa sakit atau obat anti-alergi.
+Peralatan ini sangat penting untuk menangani cedera ringan atau kondisi medis selama perjalanan di alam bebas.</string>
+
+    <!-- Senter -->
+    <string name="senterTitle">Senter</string>
+    <string name="senterDesc">Senter adalah alat penerangan yang sangat penting, terutama saat mendaki di malam hari atau di tempat dengan minim cahaya.
+Pendaki sering menggunakan senter kepala (headlamp) karena praktis dan membebaskan tangan untuk aktivitas lainnya.
+Senter yang hemat energi dan memiliki baterai cadangan adalah pilihan terbaik untuk pendakian.</string>
+
+    <!-- Nesting -->
+    <string name="nestingTitle">Nesting</string>
+    <string name="nestingDesc">Nesting adalah seperangkat alat masak portabel yang biasanya terdiri dari panci, wajan, dan alat makan.
+Nesting dirancang ringan, mudah disusun, dan hemat ruang, sehingga cocok untuk kegiatan mendaki.
+Dengan nesting, pendaki dapat memasak makanan hangat atau merebus air di lokasi pendakian.</string>
+
+    <!-- Propane Stove -->
+    <string name="propaneStoveTitle">Propane Stove</string>
+    <string name="propaneStoveDesc">Propane stove adalah kompor portable yang menggunakan gas propane sebagai bahan bakar.
+Alat ini digunakan untuk memasak makanan atau merebus air saat mendaki.
+Propane stove biasanya dirancang kecil, ringan, dan mudah dipasang, sehingga praktis dibawa dalam perjalanan.
+Kompor ini sangat membantu pendaki untuk tetap mendapatkan makanan hangat di tengah alam terbuka.</string>
+    <string name="peralatan_pribadi">Peralatan Pribadi</string>
+    <string name="peralatan_kelompok">Peralatan Kelompok</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="sudah_punya_akun_login">Sudah Punya Akun ? Login</string>
+    <string name="login">Login</string>
+    <string name="email_atau_username">Email atau Username</string>
+    <string name="lupa_password">Lupa Password ?</string>
+    <string name="belum_punya_akun_register">Belum Punya Akun ? Register</string>
+    <string name="masuk_dengan_google">Masuk Dengan Google</string>
+    <string name="client_id">148874969708-ashh5ud2pbrsabpho71dvbrpt55o3f2n.apps.googleusercontent.com</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">name</string>
+    <string name="lupa_password1">Lupa Password</string>
+    <string name="masukkan_email_anda">Masukkan Email Anda</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="nama">Nama</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="simpan">Simpan</string>
+    <string name="gunung_semeru">Gunung Semeru</string>
+    <string name="_2_hari_1_malam">2 hari 1 malam</string>
+    <string name="buat_tim">Buat Tim</string>
+    <string name="gabung_tim">Gabung Tim</string>
+    <string name="tersedia">Tersedia</string>
+    <string name="cari_gunung_">Cari gunung ...</string>
+    <string name="trip_prau_title">Gunung Prau</string>
+    <string name="trip_prau_duration">3 Hari 2 Malam</string>
+    <string name="trip_prau_status">Penuh</string>
+
+    <string name="trip_rinjani_title">Gunung Rinjani</string>
+    <string name="trip_rinjani_duration">4 Hari 3 Malam</string>
+    <string name="trip_rinjani_status">Tutup</string>
+    <string name="nama_tim">Nama Tim</string>
+    <string name="masukkan_nama_tim">Masukkan nama tim</string>
+    <string name="daftar_anggota">Daftar Anggota</string>
+    <string name="kembali">Kembali</string>
+    <string name="tambah_anggota">Tambah Anggota</string>
+    <string name="lihat_anggota">Lihat Anggota</string>
+    <string name="loading">Loading...</string>
+    <string name="masukkan_data">Masukkan Data</string>
+    <string name="alamat">Alamat</string>
+    <string name="usia">Usia</string>
+    <string name="detail_information">Detail Information</string>
+    <string name="nama_">Name:</string>
+    <string name="alamat_">Alamat:</string>
+    <string name="email_">Email:</string>
+    <string name="usia_">Usia:</string>
+    <string name="hapus_data">Hapus Data</string>
+    <string name="lokasi">Lokasi: %1$s</string>
+    <string name="jalur_pendakian">Jalur Pendakian</string>
+    <string name="detail_informasi_gunung">Informasi Gunung</string>
+    <string name="lokasi_tidak_ditemukan">Lokasi tidak ditemukan</string>
+    <string name="gunungTitle">Gunung</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="go_hike">Go Hike</string>
+    <string name="menu_icon">Menu Icon</string>
+    <string name="profile">profile</string>
+    <string name="search">search</string>
+    <string name="search_icon">search icon</string>
+    <string name="todo">todo</string>
+    <string name="gunung_bromo">Gunung Bromo</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="back">back</string>
+    <string name="privacy_police">Privacy Police</string>
+    <string name="privacy_police1">Privacy Police</string>
+    <string name="help_center">Help Center</string>
+    <string name="selesai">selesai</string>
+    <string name="back_button">back button</string>
+</resources>

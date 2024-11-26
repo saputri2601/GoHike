@@ -49,9 +49,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
 
         // Inisialisasi avatar_icon
         ImageView avatarIcon = findViewById(R.id.avatar_icon);
-        avatarIcon.setOnClickListener(v -> {
-            replaceFragment(new ProfilFragment());
-        });
+        avatarIcon.setOnClickListener(v -> replaceFragment(new ProfilFragment()));
 
 
 
@@ -81,9 +79,22 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
 
         // RecyclerView untuk kategori
         RecyclerView rcvCategory = findViewById(R.id.rcvcategory);
-        CategoryAdapter categoryAdapter = new CategoryAdapter(this);
+        CategoryAdapter categoryAdapter = new CategoryAdapter(this, categoryName -> {
+            // Listener klik kategori
+            if ("Gunung".equalsIgnoreCase(categoryName)) {
+                replaceFragment(new GunungFragment());
+            } else if ("Peralatan".equalsIgnoreCase(categoryName)) {
+                replaceFragment(new PeralatanFragment());
+            }
+        });
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        rcvCategory.setLayoutManager(linearLayoutManager);
+
+        categoryAdapter.setData(getListCategory());
+        rcvCategory.setAdapter(categoryAdapter);
+
+        linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rcvCategory.setLayoutManager(linearLayoutManager);
 
         categoryAdapter.setData(getListCategory());

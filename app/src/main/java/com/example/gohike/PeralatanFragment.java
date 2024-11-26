@@ -1,7 +1,9 @@
 package com.example.gohike;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ public class PeralatanFragment extends Fragment {
     FragmentPeralatanBinding binding;
     ListAdapter listAdapter;
     ArrayList<ListData> dataArrayList = new ArrayList<>();
+    private Activity rootView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +32,19 @@ public class PeralatanFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        // Inisialisasi tombol Back
+        View backButton = view.findViewById(R.id.backButton); // Menggunakan 'view' parameter untuk referensi layout fragment
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> {
+                Log.d("GunungFragment", "Tombol Back ditekan");
+                // Navigasi kembali ke NavigationActivity
+                Intent intent = new Intent(getActivity(), NavigationActivity.class);
+                startActivity(intent);
+                requireActivity().finish(); // Menutup aktivitas fragment saat ini
+            });
+        } else {
+            Log.e("GunungFragment", "backButton tidak ditemukan di layout.");
+        }
 
         // Data untuk ListView
         int[] imageList = {

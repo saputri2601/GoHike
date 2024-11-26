@@ -1,12 +1,16 @@
 package com.example.gohike;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,11 +20,28 @@ import java.util.List;
 
 public class GunungFragment extends Fragment {
 
+    private Object backButton;
+    private Activity view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_gunungfragment, container, false);
+
+        // Inisialisasi tombol Back
+        View backButton = rootView.findViewById(R.id.backButton);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> {
+                Log.d("GunungFragment", "Tombol Back ditekan");
+                // Navigasi kembali ke NavigationActivity
+                Intent intent = new Intent(getActivity(), NavigationActivity.class);
+                startActivity(intent);
+                requireActivity().finish(); // Menutup GunungFragment
+            });
+        } else {
+            Log.e("GunungFragment", "backButton tidak ditemukan di layout.");
+        }
 
         // Initialize RecyclerView
         RecyclerView recyclerView = rootView.findViewById(R.id.rvLokasi);
@@ -45,6 +66,7 @@ public class GunungFragment extends Fragment {
 
         return rootView;
     }
+
 
     // Data statis yang akan ditampilkan
     private List<ProvinsiResponse> getProvinsiList() {

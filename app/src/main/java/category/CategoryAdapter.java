@@ -21,16 +21,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
     private final Context mContext;
     private List<category> categoryList;
-    private OnCategoryClickListener listener;
+    private final OnCategoryClickListener categoryClickListener;
 
-    // Interface for click listener
     public interface OnCategoryClickListener {
         void onCategoryClick(String categoryName);
     }
 
-    public CategoryAdapter(Context mContext) {
+    public CategoryAdapter(Context mContext, OnCategoryClickListener listener) {
         this.mContext = mContext;
-        this.listener = listener;
+        this.categoryClickListener = listener;
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -62,10 +61,10 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         gunungAdapter.setGunungList(category.getGunungList());
         holder.rcvGunung.setAdapter(gunungAdapter);
 
-        // Set item click listener
+        // Tambahkan listener klik untuk kategori
         holder.itemView.setOnClickListener(v -> {
-            if (listener != null) {
-                listener.onCategoryClick(category.getTitleGunung());
+            if (categoryClickListener != null) {
+                categoryClickListener.onCategoryClick(category.getTitleGunung());
             }
         });
     }
